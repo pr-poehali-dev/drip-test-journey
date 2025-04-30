@@ -132,14 +132,14 @@ const Test = () => {
         </CardHeader>
         <CardContent>
           <RadioGroup 
-            value={answers[currentStep]?.toString()} 
+            value={answers[currentStep]?.toString() || ""} 
             onValueChange={(value) => handleOptionSelect(parseInt(value))}
             className="space-y-4"
           >
             {question.options.map((option, index) => (
               <div key={index} className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-50">
-                <RadioGroupItem value={index.toString()} id={`option-${index}`} />
-                <Label htmlFor={`option-${index}`} className="text-base cursor-pointer flex-grow">
+                <RadioGroupItem value={index.toString()} id={`option-${currentStep}-${index}`} />
+                <Label htmlFor={`option-${currentStep}-${index}`} className="text-base cursor-pointer flex-grow">
                   {option}
                 </Label>
               </div>
