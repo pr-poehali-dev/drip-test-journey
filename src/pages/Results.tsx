@@ -60,6 +60,12 @@ const Results = () => {
           
           <Separator />
           
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-4 text-center animate-pulse">
+            <p className="text-yellow-800 font-medium">
+              Сделайте скриншот Ваших результатов и отправьте его на WhatsApp 89027966585 с кодовым словом "Счастье", чтобы получить консультацию со скидкой
+            </p>
+          </div>
+          
           <div className="text-center text-gray-700">
             <p>
               Для получения подробной консультации и записи на курс капельниц,
